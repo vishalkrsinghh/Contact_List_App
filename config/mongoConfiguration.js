@@ -1,5 +1,7 @@
 const mongoose= require("mongoose");
-const url= "mongodb+srv://vksingh:GE9ZaOc4iMScjotD@atlascluster.qipc8ac.mongodb.net/contactListDatabase";
+require("dotenv").config();
+// console.log("it stores our .env file data "," ",process.env);
+const url= process.env.MONGOURL;
 mongoose.connect(url)
 .then(()=>{
    console.log("connected sucessfully");
