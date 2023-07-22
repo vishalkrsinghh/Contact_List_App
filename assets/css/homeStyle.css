@@ -1,0 +1,65 @@
+
+body{
+    background-color: rgb(227, 255, 255);
+}
+table,th,td{
+    border: 1px solid black;
+    table-layout: auto;
+    border-collapse: collapse;
+    padding: 10px 5px;
+}
+.fa-trash-can{
+    margin-left: 40px;
+    color: darkcyan;
+    margin-right: 0px;
+}
+.fa-trash-can:hover{
+    color: red;
+}
+.fa-sm{
+    margin-right: 5px;
+    color: darkcyan;
+}
+td a {
+    float: right;
+}
+input{
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input[type="submit"]{
+    border: 1px solid black;
+    padding:3px 18px;
+}
+h1{
+    text-align: center;
+}
+.tickBtn{
+    border:none;
+    outline: none;
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+.fa-check{
+    display: none;
+}
+.td {
+    display: flex;
+    align-items: center;
+}
+#tr{
+   position: relative; 
+}
+.edit{
+    position: absolute;
+    top:50%;
+    right: 30px;
+}
+.edit:hover{
+    color: rgb(0, 255, 0);
+    cursor: pointer;
+}
