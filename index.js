@@ -2,6 +2,9 @@ const express=require("express");
 const app= express();
 const db= require("./config/mongoConfiguration");
 const path= require("path");
+require("dotenv").config();
+const PORT= process.env.PORT;
+// console.log(PORT);
 // const { collection } = require("./model/contactSchema");
 // const contactListCollection= require("./model/contactSchema");
 
@@ -20,6 +23,6 @@ app.use("/",require("./routes/homeRoute"));
 //  contactListCollection.create({contactName:"vishal Singh", phone:"08510036236"});
 //  get data from collection
 
-app.listen("8000",()=>{
+app.listen(PORT || 8000 ,()=>{
     console.log("running");
 })
