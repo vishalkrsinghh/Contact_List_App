@@ -3,7 +3,7 @@ const app= express();
 const db= require("./config/mongoConfiguration");
 const path= require("path");
 require("dotenv").config();
-const PORT= process.env.PORT;
+const PORT= process.env.PORT || 8000;
 // console.log(PORT);
 // const { collection } = require("./model/contactSchema");
 // const contactListCollection= require("./model/contactSchema");
@@ -23,6 +23,6 @@ app.use("/",require("./routes/homeRoute"));
 //  contactListCollection.create({contactName:"vishal Singh", phone:"08510036236"});
 //  get data from collection
 
-app.listen(PORT || 8000 ,()=>{
-    console.log("running");
+app.listen(PORT,()=>{
+    console.log(`running on port ${PORT}`);
 })
