@@ -11,7 +11,7 @@ for (let i = 0; i < edit.length; i++) {
     edit[i].onclick = function () {
         let textName = nme[i].innerText;
         let textPhone = phne[i].innerText;
-        nme[i].innerHTML = `<form action="/update/${i}" method="post" class="form" style=" border: 1px solid; width: fit-content;"><input type="text" name="contactName" class="NAME" placeholder="Name here" required maxlength="24" value="${textName}" size="10"> <button type="submit" class="tickBtn"><i class="fa-solid fa-check fa-sm tk1"></i></button> </form>`
+        nme[i].innerHTML = `<form action="/update/${i}" method="post" class="form" style=" border: 1px solid; width: fit-content;"><input type="text" name="contactName" class="NAME" placeholder="Name here" required maxlength="18" value="${textName}" size="10"> <button type="submit" class="tickBtn"><i class="fa-solid fa-check fa-sm tk1"></i></button> </form>`
         phne[i].innerHTML = `<form action="/update/${i}" method="post" class="form" style=" border: 1px solid; width: fit-content;"><input type="text" name="phone" placeholder="Mobile No." class="PHONE" required minlength="10" maxlength="10" size="10" value="${textPhone}"> <button type="submit" class="tickBtn"><i class="fa-solid fa-check fa-sm tk2"></i></button> </form>`
 
         let NAME = document.getElementsByClassName("NAME");

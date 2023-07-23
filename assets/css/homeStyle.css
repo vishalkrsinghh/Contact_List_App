@@ -16,11 +16,14 @@ table,th,td{
 .fa-trash-can:hover{
     color: red;
 }
+.fa-phone:hover,.phn:hover{
+    color: blue;
+}
 .fa-sm{
     margin-right: 5px;
     color: darkcyan;
 }
-td a {
+td .a {
     float: right;
 }
 input{
@@ -29,12 +32,14 @@ input{
     border: none;
     border-bottom: 1px solid black;
 }
-
+.PHONE,.NAME{
+    border: none;
+}
 input[type="submit"]{
     border: 1px solid black;
     padding:3px 18px;
 }
-h1{
+h3{
     text-align: center;
 }
 .tickBtn{
@@ -62,4 +67,35 @@ h1{
 .edit:hover{
     color: rgb(0, 255, 0);
     cursor: pointer;
+}
+#dv_2 {
+    display: flex;
+    max-height: 75vh;
+    overflow: scroll;
+    justify-content: center;
+    margin-top: 23px;
+}
+#dv_2::-webkit-scrollbar{
+    display: none;
+}
+#dv_1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.phne,.phn{
+    color: #000000;
+}
+.tdno{
+    text-decoration: none;
+}
+#submit{
+    cursor: pointer;
+}
+@media only screen and (max-width:280px){
+    .edit{
+        top:65%;
+    }
 }
